@@ -1,4 +1,8 @@
-i = input()
-b = int(input())
+i = int(input())
 
-print("Your name " + i)
+if i > 0:
+    print('Yes')
+elif i == 0:
+    print('Zero')
+else:
+    print('No')
