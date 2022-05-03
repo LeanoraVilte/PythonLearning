@@ -1,8 +1,2 @@
-i = int(input())
+from mitmproxy.utils.strutils import x
 
-if i > 0:
-    print('Yes')
-elif i == 0:
-    print('Zero')
-else:
-    print('No')
