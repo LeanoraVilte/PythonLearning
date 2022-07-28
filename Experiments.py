@@ -22,3 +22,10 @@ print(abs(a + 1j))
 a = (1, 1.0)
 
 print(isinstance(a, (int, float)))
+
+_A__variable = 1
+class A:
+    def get_variable(self):
+        return __variable
+
+print(A().get_variable())

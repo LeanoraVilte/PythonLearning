@@ -1,4 +1,7 @@
 from math import floor
+import matplotlib as mlt
+import matplotlib.pyplot as plt
+import pandas as pd
 
 import numpy as np
 from numpy import mean, std
@@ -13,6 +16,8 @@ r = sum(x)
 u = floor(x)
 s = std(x)
 
+
+
 def In_std(x):
     a = []
     i = 0
@@ -23,6 +28,14 @@ def In_std(x):
         i += 1
     return (a)
 
+l = In_std(x)
+
+df = pd.Series(data = x)
+df1 = pd.Series(data = l)
+
+df.plot(kind = 'pie')
+df1.plot(kind = 'pie')
+plt.show()
 
 
 print(r)
