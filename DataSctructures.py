@@ -1,4 +1,5 @@
 import self as self
+from numpy import size
 
 
 class Stack:
@@ -65,3 +66,11 @@ class LinkedList:
         while n != None:
             print(n.data, end=" =>")
             n = n.next
+
+    class Graph():
+        def __init__(self):
+            self.adj = [ [0] * size for i in range(size)]
+            self.size = size
+
+    def add_edge(self, orig, dest):
+        if orig > self.size or dest > self.size or orig < 0 or dest < 0
