@@ -7,3 +7,9 @@ class Stack:
 
     def push(self, item):
         self.items.insert(0,item)
+
+    def pop(self):
+        return self.items.pop(0)
+
+    def print_stack(self):
+        print (self.items)
